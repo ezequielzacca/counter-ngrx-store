@@ -1,4 +1,4 @@
-<div>Counter {{ counter | async }}</div>
-<button (click)="incrementar()">+</button>
-<button (click)="decrementar()">-</button>
+<app-counter-displayer [counterValue]="counter"></app-counter-displayer>
+<app-counter-decrementer (onDecrement)="decrementar()"></app-counter-decrementer>
+<app-counter-incrementer (onIncrement)="incrementar()"></app-counter-incrementer>
 
