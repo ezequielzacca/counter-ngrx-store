@@ -11,7 +11,7 @@ export class CounterIncrementerComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  triggerDecrement() {
+  triggerIncrement() {
     this.onIncrement.emit();
   }
 

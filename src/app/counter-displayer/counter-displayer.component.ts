@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./counter-displayer.component.css"]
 })
 export class CounterDisplayerComponent implements OnInit {
-  @Input() counterValue: number = 0;
+  @Input() counterValue: number;
   constructor() {}
 
   ngOnInit() {}

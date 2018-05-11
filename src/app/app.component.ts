@@ -11,17 +11,17 @@ import { INCREMENT, DECREMENT } from "../state/reducers/counter.reducer";
 })
 export class AppComponent implements OnInit {
   title = "app";
-  counter: Observable<number>;
+  counter: number = 0;
 
   constructor(private store: Store<IAppState>) {}
-  contador: number = 0;
+  
   ngOnInit() {}
 
   incrementar() {
-    this.contador += 1;
+    this.counter += 1;
   }
   decrementar() {
-    this.contador -= 1;
+    this.counter -= 1;
   }
 }
 
