@@ -17,23 +17,23 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.store.subscribe(state => {
-      console.log("-------------");
+      /*console.log("-------------");
       console.log("NEW STATE");
-      console.log(state);
+      console.log(state);*/
     });
     this.counter = this.store.pipe(select(state => state.counter));
   }
 
   incrementar() {
-    /*console.log("--------------");
+    console.log("--------------");
     console.log("ACTION DISPATCHED");
-    console.log({ type: INCREMENT });*/
+    console.log({ type: INCREMENT });
     this.store.dispatch({ type: INCREMENT });
   }
   decrementar() {
-    /*console.log("--------------");
+    console.log("--------------");
     console.log("ACTION DISPATCHED");
-    console.log({ type: DECREMENT });*/
+    console.log({ type: DECREMENT });
     this.store.dispatch({ type: DECREMENT });
   }
 }
